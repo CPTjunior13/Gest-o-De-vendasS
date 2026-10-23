@@ -1,0 +1,6 @@
+{
+  "appId": "com.glowvendas.app",
+  "appName": "Glow Vendas",
+  "webDir": "www",
+  "server": { "androidScheme": "https" }
+}
