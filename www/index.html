@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Glow Vendas</title>
+<meta name="theme-color" content="#6b1d47">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Glow Vendas">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Glow Vendas</h1>
+  <div class="hbtns">
+    <button id="install" class="ghost-w" hidden>Instalar</button>
+    <button class="ghost-w" data-a="settings" aria-label="Ajustes">Ajustes</button>
+  </div>
+</header>
+<main>
+  <section id="t-home"></section>
+  <section id="t-sell" hidden>
+    <input id="q" type="search" placeholder="Buscar produto" autocomplete="off">
+    <div id="sell-list"></div>
+  </section>
+  <section id="t-prod" hidden>
+    <button class="btn full" data-a="new">Cadastrar produto</button>
+    <div id="prod-list"></div>
+  </section>
+  <section id="t-chart" hidden></section>
+</main>
+<nav>
+  <button data-tab="home" class="on"><svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Início</button>
+  <button data-tab="sell"><svg viewBox="0 0 24 24"><path d="M6 7h12l1 13H5zM9 7a3 3 0 0 1 6 0"/></svg>Vender</button>
+  <button data-tab="prod"><svg viewBox="0 0 24 24"><path d="M4 8l8-4 8 4v8l-8 4-8-4zM4 8l8 4 8-4M12 12v8"/></svg>Produtos</button>
+  <button data-tab="chart"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>Gráficos</button>
+</nav>
+<div id="modal" hidden></div>
+<div id="toast" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
